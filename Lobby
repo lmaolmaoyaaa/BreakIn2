@@ -1,0 +1,105 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Break in", "DarkTheme")
+
+local Tab = Window:NewTab("Roles")
+local R_Section = Tab:NewSection("MAKE SURE TO USE THESE IN LOBBY")
+
+
+if game.PlaceId == "4620170611" then
+
+   Library:Destroy
+	
+end
+
+R_Section:NewLabel("ADULTS") -- the start of Roles section
+
+R_Section:NewButton("Swat", "Makes you a swat", function()
+	local args = {
+		[1] = "SwatGun",
+		[2] = true
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+end)
+
+R_Section:NewButton("Police", "Makes you a police", function()
+	local args = {
+		[1] = "Gun",
+		[2] = true
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+end)
+
+R_Section:NewButton("Guest (HARDCORE MODE)", "Makes you a guest", function()
+	local args = {
+		[1] = "LinkedSword",
+		[2] = true
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+end)
+
+
+
+R_Section:NewButton("The Proctecter", "Makes you a protecter", function()
+	local args = {
+		[1] = "Bat",
+		[2] = false,
+		[3] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.MakeRole:FireServer(unpack(args))
+end)
+
+R_Section:NewButton("Medic", "Makes you a medic", function()
+	local args = {
+		[1] = "MedKit",
+		[2] = false,
+		[3] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.MakeRole:FireServer(unpack(args))
+end)
+
+R_Section:NewLabel("KIDS")
+
+R_Section:NewButton("Hyper", "Makes you a hyper", function()
+	local args = {
+		[1] = "Lollipop",
+		[2] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+end)
+
+R_Section:NewButton("The Defender", "Makes you the defender", function()
+	local args = {
+		[1] = "Sword",
+		[2] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+end)
+
+R_Section:NewButton("The Hungry", "Makes you the hungry", function()
+	local args = {
+		[1] = "Chips",
+		[2] = true,
+		[3] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.MakeRole:FireServer(unpack(args))
+
+end)
+
+R_Section:NewButton("Stealth", "Makes you the stealth", function()
+	local args = {
+		[1] = "TeddyBloxpin",
+		[2] = true,
+		[3] = false
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.MakeRole:FireServer(unpack(args))
+
+end)
