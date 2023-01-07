@@ -4,14 +4,8 @@ local Window = Library.CreateLib("Break in", "DarkTheme")
 local Tab = Window:NewTab("Roles")
 local R_Section = Tab:NewSection("MAKE SURE TO USE THESE IN LOBBY")
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lmaolmaoyaaa/BreakIn2/main/INGAME"))()
 
-if game.PlaceId == "4620170611" then
-
-   Library:Destroy
-   
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/lmaolmaoyaaa/BreakIn2/main/INGAME"))()
-	
-end
 
 R_Section:NewLabel("ADULTS") -- the start of Roles section
 
