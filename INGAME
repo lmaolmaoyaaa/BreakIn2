@@ -6,7 +6,7 @@ local I_Section = I_Tab:NewSection("Add items to your invetory")
 
 
 local O_Tab = Window:NewTab("Others")
-local O_Section = O_Tab:NewSections("Others")
+local O_Section = O_Tab:NewSection("Others")
 
 -- Others
 
