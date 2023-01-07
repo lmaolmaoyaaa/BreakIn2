@@ -9,7 +9,7 @@ if game.PlaceId == "4620170611" then
 
    Library:Destroy
    
-   https://raw.githubusercontent.com/lmaolmaoyaaa/BreakIn2/main/INGAME
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/lmaolmaoyaaa/BreakIn2/main/INGAME"))()
 	
 end
 
